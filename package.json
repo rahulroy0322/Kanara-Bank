@@ -1,0 +1,24 @@
+{
+  "name": "kanara-bank",
+  "version": "1.0.0",
+  "description": "Digital-only fintech bank backend",
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "ENV=DEV tsx --watch src/main.ts",
+    "start": "ENV=PROD node dist/main.js"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.6",
+    "express": "^5.2.1",
+    "joi": "^18.2.9"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.6.4",
+    "tsx": "^4.23.15",
+    "typescript": "^6.0.3"
+  },
+  "author": "Rahul Roy",
+  "license": "MIT"
+}
