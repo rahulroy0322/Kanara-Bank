@@ -2,7 +2,6 @@ import express from 'express'
 
 import { env } from './config/env'
 
-
 const app = express()
 
 app.get('/health', (_req, res) => {
@@ -10,5 +9,6 @@ app.get('/health', (_req, res) => {
 })
 
 app.listen(env.PORT, () => {
+  // biome-ignore lint/suspicious/noConsole: TODO - replace with logger in logger config
   console.log(`Server running on port ${env.PORT}.`)
 })

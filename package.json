@@ -6,6 +6,8 @@
   "scripts": {
     "build": "tsc",
     "dev": "ENV=DEV tsx --watch src/main.ts",
+    "format": "biome check ./src",
+    "format:fix": "biome check --write ./src",
     "start": "ENV=PROD node dist/main.js"
   },
   "dependencies": {
@@ -14,6 +16,7 @@
     "joi": "^18.2.9"
   },
   "devDependencies": {
+    "@biomejs/biome": "2.5.15",
     "@types/express": "^5.0.6",
     "@types/node": "^26.6.4",
     "tsx": "^4.23.15",

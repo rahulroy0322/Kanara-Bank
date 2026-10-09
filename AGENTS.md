@@ -14,9 +14,8 @@ All money amounts are stored and served as **Paisa (integer)**. No decimals; the
 - `npm start` — run built output
 - `npm run db:make` — drizzle-kit generate
 - `npm run db:apply` — drizzle-kit migrate
-- `npm run lint` — eslint over `src/`
-- `npm run format` — biome format check
-- `npm run format:fix` — biome format write
+- `npm run format` — biome check
+- `npm run format:fix` — biome check --writ
 - `npm test` — vitest
 
 ## Architecture

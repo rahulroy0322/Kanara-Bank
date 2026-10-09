@@ -34,6 +34,4 @@ const env = {
   ENV: value.ENV as string,
 }
 
-export {
-  env,
-}
+export { env }
